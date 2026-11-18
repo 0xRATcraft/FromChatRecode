@@ -1,0 +1,48 @@
+[package]
+name = "fc-main"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+fc-shared = { path = "../shared" }
+tokio.workspace = true
+axum.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+serde_urlencoded.workspace = true
+sqlx.workspace = true
+chrono.workspace = true
+uuid.workspace = true
+jsonwebtoken.workspace = true
+bcrypt.workspace = true
+tracing.workspace = true
+tower.workspace = true
+tower-http.workspace = true
+http.workspace = true
+http-body.workspace = true
+base64.workspace = true
+rand.workspace = true
+sha2.workspace = true
+hmac.workspace = true
+futures.workspace = true
+bytes.workspace = true
+dotenvy.workspace = true
+thiserror.workspace = true
+percent-encoding.workspace = true
+mime.workspace = true
+regex = "1"
+anyhow = "1"
+async-trait = "0.1"
+futures-util = "0.3"
+tokio-tungstenite = "0.29"
+reqwest.workspace = true
+woothee = "0.10"
+hex.workspace = true
+
+[dev-dependencies]
+tokio.workspace = true
+
+[[bin]]
+name = "fc-main"
+path = "src/main.rs"
